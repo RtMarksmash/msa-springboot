@@ -23,8 +23,7 @@ public class Usuario {
 		private int cargo;
 		@Column(name="usu_email")
 		private String email;
-		@Column(name="usu_pass")
-		private String password;
+		
 		
 		
 
@@ -37,7 +36,7 @@ public class Usuario {
 			this.tipoDeSangre = tipoDeSangre;
 			this.cargo = cargo;
 			this.email = email;
-			this.password = password;
+			
 		}
 		
 		public Usuario() {
@@ -92,13 +91,7 @@ public class Usuario {
 			this.email = email;
 		}
 
-		public String getPassword() {
-			return password;
-		}
-
-		public void setPassword(String password) {
-			this.password = password;
-		}
+		
 		
 		
 
