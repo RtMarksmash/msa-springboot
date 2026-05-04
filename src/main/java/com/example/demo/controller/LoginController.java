@@ -22,7 +22,7 @@ public class LoginController {
         return loginService.save(l);
     }
 
-    @PostMapping
+    @PostMapping("/pass")
     public ResponseEntity<String> login(@RequestBody Login usuario) {
         String mensaje = loginService.login(usuario.getUsername(), usuario.getPassword());
         return ResponseEntity.ok(mensaje);

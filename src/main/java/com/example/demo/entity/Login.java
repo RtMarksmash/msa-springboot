@@ -14,18 +14,18 @@ public class Login {
 		@Id
 		@GeneratedValue(strategy=GenerationType.IDENTITY)
 		@Column(name="log_id")
-		private long id;
+		private Long id;
 		@Column(name="log_username")
 		private String username;
 		@Column(name="log_pass")
-		private String Password;
+		private String password;
 		
 		
-		public Login(long id, String username, String password) {
+		public Login(Long id, String username, String password) {
 			super();
 			this.id = id;
 			this.username = username;
-			Password = password;
+			this.password = password;
 		}
 
 
@@ -34,12 +34,12 @@ public class Login {
 		}
 
 
-		public long getId() {
+		public Long getId() {
 			return id;
 		}
 
 
-		public void setId(long id) {
+		public void setId(Long id) {
 			this.id = id;
 		}
 
@@ -55,12 +55,12 @@ public class Login {
 
 
 		public String getPassword() {
-			return Password;
+			return password;
 		}
 
 
 		public void setPassword(String password) {
-			Password = password;
+			this.password = password;
 		}
 		
 
